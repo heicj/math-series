@@ -19,11 +19,17 @@ def lucas(n):
 	
 	return lucas(n - 1) + lucas(n - 2)
 	
+def sum_series(n, x=0, y=0):
+	if x ==2 and y == 1:
+		return lucas(n)
+	else:
+		return fibonnacci(n)
+	
 	
 
 if __name__ == "__main__":
 	print (fibonnacci(3))
 	print (lucas(2))
-	
+
 
 	
