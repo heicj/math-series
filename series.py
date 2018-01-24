@@ -15,7 +15,15 @@ def lucas(n):
         return 1
     return lucas(n-1) + lucas(n-2)
 
+def sum_series(n, x=0, y=1):
+    if x==2 and y==1:
+        return lucas(n)
+    else:
+        return fibonacci(n)
+
 print("Start")
 if __name__ == "__main__":
-    print(fibonacci(3))
-    print(lucas(2))
+    print(fibonacci(4))
+    print(lucas(4))
+    print(sum_series(4))
+    print(sum_series(4, 2, 1))
